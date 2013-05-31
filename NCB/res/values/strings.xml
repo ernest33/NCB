@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NCB by ernest33</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_name_long">Notification background selection</string>
+    <string name="bt_select">Select image...</string>
+    <string name="bt_trans">Set image transparency</string>
+    <string name="img_desc">View of selected image</string>
+
+</resources>
