@@ -8,7 +8,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".Ncb_Settings" >
+    tools:context=".Ncb_Settings"
+        >
 
     <TextView
         android:id="@+id/textView1"
@@ -23,7 +24,8 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/bt_select" />
+        android:text="@string/bt_select"
+        android:textColor="#ffffff"/>
 
     <ImageView
         android:id="@+id/imageView1"
@@ -48,6 +50,7 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/bt_trans" />
+        android:text="@string/bt_trans"
+        android:textColor="#ffffff"/>
 
 </TableLayout>
