@@ -17,7 +17,6 @@ public class Ncb_module implements IXposedHookZygoteInit, IXposedHookInitPackage
 	@Override
 	public void handleInitPackageResources(InitPackageResourcesParam resparam) throws Throwable
 	{
-// TODO Auto-generated method stub
 		if (!resparam.packageName.equals("com.android.systemui"))
 			return;
 		XposedBridge.log("Alors?");
@@ -30,7 +29,6 @@ public class Ncb_module implements IXposedHookZygoteInit, IXposedHookInitPackage
 					@Override
 					public Drawable newDrawable(XResources res, int id) throws Throwable
 					{
-						//return Drawable.createFromPath("/sdcard/notifbg.png");
 						return Drawable.createFromPath(Environment.getExternalStorageDirectory() + "/notifbg.png");
 					}
 				});
@@ -43,8 +41,8 @@ public class Ncb_module implements IXposedHookZygoteInit, IXposedHookInitPackage
 	@Override
 	public void initZygote(StartupParam startupParam) throws Throwable
 	{
-// TODO Auto-generated method stub
-//MODULE_PATH = startupParam.modulePath;
+		XposedBridge.log("Don't make your Zygote!");
+		//MODULE_PATH = startupParam.modulePath;
 		XModuleResources modRes = XModuleResources.createInstance(startupParam.modulePath, null);
 		XResources.setSystemWideReplacement(
 			"android",
